@@ -1,0 +1,329 @@
+@font-face {
+  font-family: 'parrafos';
+  src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+
+@font-face {
+font-family: 'navtext';
+src: url(../fonts/Captain\ Blackjack.ttf);
+}
+
+@font-face {
+font-family: 'parrafosd';
+src: url(../fonts/coolvetica\ rg.otf);
+}
+
+@font-face {
+font-family: 'titulo';
+src: url(../fonts/Beauty\ and\ the\ Beast\ Sample.ttf)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  size: 100%;
+  background-image: url('../assets/Fondo4.jpg');
+  background-size: contain;
+  color: #ffffff;
+  cursor: url('../assets/curs0r_3.png'), auto;
+}
+
+@media screen and (max-width:1090px) {
+body{
+background-image: url('../assets/Fondo4Tablet.jpg');
+
+}
+
+}
+
+@media screen and (max-width:800px) {
+  body{
+  background-image: url('../assets/Fondo4Movil.jpg');
+  
+  }
+  
+  }
+
+nav {
+background-color: transparent !important;
+}
+
+/* cambiar tipo de letra nav*/
+.especial {
+font-family: "navtext";
+font-size: 2rem;
+gap: 2rem;
+}
+
+.container-fluid nav ul li a {
+color: #efdd5e !important;
+}
+
+
+footer {
+background-color: #352a36;
+}
+
+video {
+  opacity: 0.3
+}
+
+h1 {
+font-family: 'titulo';
+color: #E8FC95;
+font-size: 4rem;
+word-wrap:normal
+}
+
+.h1plus {
+font-family: 'titulo';
+color: #F9E270;
+font-size: 4rem;
+word-wrap:normal
+}
+
+.titulodos {
+font-family: 'navtext';
+color: #D6D0D8;
+font-size: 70px;
+}
+
+.tituloadicional {
+font-family: parrafos;
+}
+
+.subtitulo {
+font-family: 'navtext' ;
+font-size: 4rem;
+}
+
+.estrella {
+position: absolute;
+  left: 50px;
+  top: 0px;
+  opacity: 0.3;
+  z-index: -2;
+}
+
+@media screen and (max-width:1090px) {
+  .estrella{
+  visibility: hidden;
+
+}
+
+}
+
+.unicoen {
+position: relative;
+}
+
+.parrafos {
+font-family: 'parrafos';
+text-align: center;
+font-size: 30px
+}
+
+.parrafosad{
+font-family: 'parrafos';
+text-align: center;
+font-size: 35px
+}
+
+.parrafofooter {
+font-family: 'parrafos';
+text-align: center;
+font-size: 24px
+}
+
+.carousel-slide {
+display: flex;
+justify-content: center;
+}
+
+.slides {
+border-width: 5px;
+border-color: aqua;
+}
+
+.pincel{
+animation: myAnim 2s infinite normal forwards;
+}
+
+
+@keyframes myAnim {
+0%,
+100% {
+  transform: translateX(0%);
+  transform-origin: 50% 50%;
+}
+
+15% {
+  transform: translateX(-80px) rotate(6deg);
+}
+
+30% {
+  transform: translateX(15px) rotate(-6deg);
+}
+
+45% {
+  transform: translateX(-15px) rotate(3.6deg);
+}
+
+60% {
+  transform: translateX(9px) rotate(-2.4deg);
+}
+
+75% {
+  transform: translateX(-6px) rotate(1.9deg);
+}
+}
+
+.soluno {
+  position: relative;
+  animation: soluno 7s infinite;
+  display: flex;
+}
+
+@keyframes soluno {
+  10%  {top: 20px; left: 50px; rotate: 90deg;}
+  12% {top: 20px; left: 50px; rotate: 90deg;}
+  15% {top: 20px; left: 50px; rotate: 90deg;}
+  17% {top: 220px; left: 50px; rotate: 90deg;}
+  20% {top: 220px; left: 50px; rotate: 90deg;}
+  23% {top: 220px; left: 50px; rotate: 90deg;}
+  50% {top: 220px; left: 50px; rotate: 90deg;}
+  53% {top: 220px; left: 50px; rotate: 90deg;}
+  55% {top: 220px; left: 50px; rotate: 90deg;}
+  60% {top: 220px; left: 50px; rotate: 90deg;}
+  63% {top: 220px; left: 50px; rotate: 90deg;}
+  65% {top: 220px; left: 50px; rotate: 90deg;}
+  70% {top: 220px; left: 50px; rotate: 90deg;}
+  73% {top: 220px; left: 50px; rotate: 90deg;}
+  75% {top: 220px; left: 50px; rotate: 90deg;}
+  80% {top: 20px; left: 50px; rotate: 90deg;}
+  90% {top: 20px; left: 50px; rotate: 90deg;}
+  100% {top: 20px; left: 50px; rotate: 90deg;}
+}
+
+.soldos {
+  position: relative;
+  animation: soldos 7s infinite;
+  display: flex;
+}
+
+@keyframes soldos {
+  10% {top: 220px; left: 270px; rotate: 90deg;}
+  12% {top: 220px; left: 270px; rotate: 90deg;}
+  15% {top: 220px; left: 270px; rotate: 90deg;}
+  17% {top: 200px; left: 270px; rotate: 90deg;}
+  20% {top: 200px; left: 270px; rotate: 90deg;}
+}
+
+.ss {animation: sacudir 5s ease 0s infinite normal forwards;}
+
+@keyframes sacudir {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-15px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(15px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+.ss2 {animation: sacudirdos 5s ease 0s infinite normal forwards;}
+
+@keyframes sacudirdos {
+  0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(8px);
+	}
+
+	80% {
+		transform: translateX(15px);
+	}
+
+	90% {
+		transform: translateX(-15px);
+	}
+}
+
+
+.parrafosd {
+font-family: 'parrafosd';
+text-align: center;
+font-size: 35px
+}
+
+.parrafosf {
+font-family: 'parrafosd';
+text-align: center;
+font-size: 24px
+}
+
+.botonesuno {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #352a36;
+}
+
+.interfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2)
+}
+
+.color {
+  transition: transform .2s;
+}
+
+.color:hover {
+  transform:perspective(4rem);
+}

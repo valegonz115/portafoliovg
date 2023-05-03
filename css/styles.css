@@ -1,0 +1,426 @@
+
+
+@font-face {
+    font-family: 'parrafos';
+    src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+
+@font-face {
+  font-family: 'navtext';
+  src: url(../fonts/Captain\ Blackjack.ttf);
+}
+
+@font-face {
+  font-family: 'parrafosd';
+  src: url(../fonts/coolvetica\ rg.otf);
+}
+
+@font-face {
+  font-family: 'titulo';
+  src: url(../fonts/Beauty\ and\ the\ Beast\ Sample.ttf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    size: 100%;
+    background-image: url('../assets/Fondo1.jpg');
+    background-size: contain;
+    color: #ffffff;
+    cursor: url('../assets/curs0r_3.png'), auto;
+}
+
+@media screen and (max-width:1090px) {
+  body{
+  background-image: url('../assets/Fondo1Tablet.jpg');
+
+}
+
+@media screen and (max-width:800px) {
+  body{
+  background-image: url('../assets/Fondo1Movil.jpg');
+
+}
+}
+
+
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+
+}
+
+nav {
+  background-color: transparent !important;
+  top: auto;
+}
+
+/* Curl Bottom Right */
+.hvr-curl-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-curl-bottom-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(315deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-right:hover:before, .hvr-curl-bottom-right:focus:before, .hvr-curl-bottom-right:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+tooltip {
+  display: flex;
+  justify-content: center;
+}
+
+/* cambiar tipo de letra nav*/
+.especial {
+  font-family: "navtext";
+  font-size: 2rem;
+  gap: 2rem;
+}
+
+.container-fluid nav ul li a {
+  color: #efdd5e !important;
+}
+
+.flor {
+  animation: attention 1.5s ease infinite;
+
+}
+
+@keyframes attention {
+  9% {
+    transform: none;
+  }
+  12% {
+    transform: scale(0.85);
+  }
+  16% {
+    transform: scale(0.95);
+  }
+  20% {
+    transform: scale(1.23);
+  }
+  24% {
+    transform: scale(1);
+  }
+}
+
+.fotouno {
+  animation: vibrar 4s ease 0s infinite normal forwards;
+}
+
+@keyframes vibrar {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-5px, 15px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(5px, 15px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.ss {animation: sacudir 5s ease 0s infinite normal forwards;}
+
+@keyframes sacudir {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-15px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(15px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+.ss2 {animation: sacudirdos 5s ease 0s infinite normal forwards;}
+
+@keyframes sacudirdos {
+  0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(8px);
+	}
+
+	80% {
+		transform: translateX(15px);
+	}
+
+	90% {
+		transform: translateX(-15px);
+	}
+}
+
+
+footer {
+  background-color: #352a36;
+}
+
+video {
+    opacity: 0.3
+}
+
+h1 {
+  font-family: 'titulo';
+  color: #E8FC95;
+  font-size: 4rem;
+  word-wrap:normal
+}
+
+.h1plus {
+  font-family: 'titulo';
+  color: #F9E270;
+  font-size: 4rem;
+  word-wrap:normal
+}
+
+.titulodos {
+  font-family: 'navtext';
+  color: #D6D0D8;
+  font-size: 70px;
+}
+
+.tituloadicional {
+  font-family: parrafos;
+}
+
+.subtitulo {
+  font-family: 'navtext' ;
+  font-size: 4rem;
+}
+
+.estrella {
+  position: absolute;
+    left: 50px;
+    top: 0px;
+    opacity: 0.3;
+    z-index: -2;
+  }
+
+  @media screen and (max-width:1090px) {
+    .estrella{
+    visibility: hidden;
+  
+  }
+  
+  }
+
+.unicoen {
+position: relative;
+}
+
+.parrafos {
+  font-family: 'parrafos';
+  text-align: center;
+  font-size: 30px
+}
+
+.parrafofooter {
+  font-family: 'parrafos';
+  text-align: center;
+  font-size: 24px
+}
+
+
+
+ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.listadouno {
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/Iconolista_3.png);
+  background-size: 3.5rem 2.9rem;
+  background-repeat: no-repeat;
+  font-family: 'parrafos';
+  font-size: 36px;
+  color: #efdff8;
+}
+
+@media screen and (max-width: 900px) {
+  .listadouno{
+    display: flex;
+    justify-content: center;
+  }
+  
+  }
+
+.listadodos {
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/Iconolistados_1.png);
+  background-position: 0 0;
+  background-size: 2.5rem 2.9rem;
+  background-repeat: no-repeat;
+  font-family: 'parrafos';
+  font-size: 36px;
+  color: #efdff8;
+}
+
+@media screen and (max-width: 900px) {
+  .listadodos{
+    display: flex;
+    justify-content: center;
+  }
+  
+  }
+
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slides {
+border-width: 5px;
+border-color: aqua;
+}
+
+.pincel{
+animation: myAnim 2s infinite normal forwards;
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-80px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.9deg);
+	}
+}
+
+.parrafosd {
+  font-family: 'parrafosd';
+  text-align: center;
+  font-size: 35px
+}
+
+.parrafosf {
+  font-family: 'parrafosd';
+  text-align: center;
+  font-size: 24px
+}
+
+  .botonesuno {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    background-color: #352a36;
+  }
+
+  .interfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2)
+  }
