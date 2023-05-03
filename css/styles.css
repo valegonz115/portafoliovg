@@ -64,9 +64,26 @@ body {
 
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.g {
+  padding-top: 150px;
+}
+
 nav {
   background-color: transparent !important;
-  top: auto;
+  display: wrap;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
 }
 
 /* Curl Bottom Right */

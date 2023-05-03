@@ -32,7 +32,7 @@ body {
   cursor: url('../assets/curs0r_3.png'), auto;
 }
 
-@media screen and (max-width:1090px) {
+@media screen and (max-width:1280px) {
   body{
   background-image: url('../assets/Fondo3Tablet.jpg');
   
@@ -48,6 +48,15 @@ background-image: url('../assets/Fondo3Movil.jpg');
 
 }
 
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+  }
+  
+  .g {
+	padding-top: 150px;
+  }
 
 nav {
 background-color: transparent !important;

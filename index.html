@@ -24,8 +24,8 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
+  <div class="container-fluid g">
+    <div class="row header">
       <nav class="navbar fixed-top navbar-expand-lg" id="home">
         <div class="container-fluid">
           <a href="#home"><img src="assets/Valentina MC (letras blancas).png" alt="logo" width="145px"></a>
@@ -283,12 +283,12 @@
           </p>
         </footer>
         <footer class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 interfooter">
-          <a href="#home" target="_self"><img class="zoom" src="assets/home.png" width="120px"></a>
-          <a class="zoom" href="https://github.com/valegonz115" target="_blank"><img class="zoom" src="assets/Github.png" width="60px"></a>
-          <a href="https://www.facebook.com/TheSimpsons/?locale=es_LA" target="_blank"><img class="zoom" src="assets/Behance.png" width="80px"></a>
+          <a href="#home" target="_self"><img class="zoom" src="assets/home.png" width="80px"></a>
+          <a class="zoom" href="https://github.com/valegonz115" target="_blank"><img class="zoom" src="assets/Github.png" width="80px"></a>
+          <a href="https://www.behance.net/valegonzalezt7415" target="_blank"><img class="zoom" src="assets/Behance.png" width="80px"></a>
           <a class="zoom" href="https://www.linkedin.com/in/valentina-gonzalez-ba1765274/" target="_blank"><img class="zoom" src="assets/Linkedin.png" width="60px"></a>
-          <a class="zoom" href="https://www.instagram.com/thesimpsons/?hl=es" target="_blank"><img class="zoom" src="assets/Twitter.png" width="80px"></a>
-          <a class="zoom" href="https://www.instagram.com/thesimpsons/?hl=es" target="_blank"><img class="zoom" src="assets/Youtube.png" width="60px"></a>
+          <br><br>
+          <a class="zoom" href="https://www.instagram.com/thesimpsons/?hl=es" target="_blank"><img class="zoom" src="assets/Youtube.png" width="80px"></a>
         </footer>
       </footer>
     </div>
@@ -301,16 +301,7 @@
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
-<script>
-  $(document).ready(function(){ irArriba(); }); //Hacia arriba
-
-function irArriba(){
-  $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
-  });
-  $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
-}
+<script src="js/gotop.js">
 </script>
 <script>
   AOS.init({

@@ -48,6 +48,16 @@ background-image: url('../assets/Fondo4Tablet.jpg');
   
   }
 
+  header {
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+  }
+  
+  .g {
+	padding-top: 150px;
+  }
+
 nav {
 background-color: transparent !important;
 }
@@ -139,16 +149,6 @@ text-align: center;
 font-size: 24px
 }
 
-.carousel-slide {
-display: flex;
-justify-content: center;
-}
-
-.slides {
-border-width: 5px;
-border-color: aqua;
-}
-
 .pincel{
 animation: myAnim 2s infinite normal forwards;
 }
@@ -194,6 +194,13 @@ animation: myAnim 2s infinite normal forwards;
     z-index: -2;
   }
 
+  @media screen and (max-width:1090px) {
+    .circulosombra{
+    visibility: hidden;
+  
+  }
+}
+
 @keyframes lado {
   0%,
 	100% {
@@ -220,20 +227,6 @@ animation: myAnim 2s infinite normal forwards;
 	90% {
 		transform: translateX(-8px);
 	}
-}
-
-.soldos {
-  position: relative;
-  animation: soldos 7s infinite;
-  display: flex;
-}
-
-@keyframes soldos {
-  10% {top: 220px; left: 270px; rotate: 90deg;}
-  12% {top: 220px; left: 270px; rotate: 90deg;}
-  15% {top: 220px; left: 270px; rotate: 90deg;}
-  17% {top: 200px; left: 270px; rotate: 90deg;}
-  20% {top: 200px; left: 270px; rotate: 90deg;}
 }
 
 .ss {animation: sacudir 5s ease 0s infinite normal forwards;}
