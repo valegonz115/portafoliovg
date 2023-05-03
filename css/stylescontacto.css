@@ -182,31 +182,44 @@ animation: myAnim 2s infinite normal forwards;
 }
 }
 
-.soluno {
-  position: relative;
-  animation: soluno 7s infinite;
-  display: flex;
+.fototres { 
+  animation: lado 7s infinite reverse backwards;
 }
 
-@keyframes soluno {
-  10%  {top: 20px; left: 50px; rotate: 90deg;}
-  12% {top: 20px; left: 50px; rotate: 90deg;}
-  15% {top: 20px; left: 50px; rotate: 90deg;}
-  17% {top: 220px; left: 50px; rotate: 90deg;}
-  20% {top: 220px; left: 50px; rotate: 90deg;}
-  23% {top: 220px; left: 50px; rotate: 90deg;}
-  50% {top: 220px; left: 50px; rotate: 90deg;}
-  53% {top: 220px; left: 50px; rotate: 90deg;}
-  55% {top: 220px; left: 50px; rotate: 90deg;}
-  60% {top: 220px; left: 50px; rotate: 90deg;}
-  63% {top: 220px; left: 50px; rotate: 90deg;}
-  65% {top: 220px; left: 50px; rotate: 90deg;}
-  70% {top: 220px; left: 50px; rotate: 90deg;}
-  73% {top: 220px; left: 50px; rotate: 90deg;}
-  75% {top: 220px; left: 50px; rotate: 90deg;}
-  80% {top: 20px; left: 50px; rotate: 90deg;}
-  90% {top: 20px; left: 50px; rotate: 90deg;}
-  100% {top: 20px; left: 50px; rotate: 90deg;}
+.circulosombra {
+  position: absolute;
+    left: 30px;
+    top: 0px;
+    opacity: 0.3;
+    z-index: -2;
+  }
+
+@keyframes lado {
+  0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
 }
 
 .soldos {
