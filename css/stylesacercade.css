@@ -121,7 +121,7 @@ position: absolute;
 }
 
 @media screen and (max-width:1090px) {
-  .estrella{
+  .multipleestrella{
   visibility: hidden;
 
 }
