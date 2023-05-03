@@ -189,6 +189,14 @@ animation: myAnim 2s infinite normal forwards;
   display: flex;
 }
 
+.accordion-item {
+  background-color: rgb(200, 192, 250);
+}
+
+.accordion-button {
+  background-color: #e3f0b2;
+}
+
 @keyframes soluno {
   10%  {top: 20px; left: 50px; rotate: 90deg;}
   12% {top: 20px; left: 50px; rotate: 90deg;}
