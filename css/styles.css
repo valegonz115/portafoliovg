@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'navtext';
-  src: url(../fonts/Captain\ Blackjack.ttf);
+  src: url(../fonts/Potato\ Pancakes.ttf);
 }
 
 @font-face {
@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding: 0;
     size: 100%;
-    background-image: url('../assets/Fondo1.jpg');
+    background-image: url('../assets/fondoplus.jpg');
     background-size: contain;
     color: #ffffff;
     cursor: url('../assets/curs0r_3.png'), auto;
@@ -40,13 +40,12 @@ body {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
   body{
   background-image: url('../assets/Fondo1Movil.jpg');
 
 }
 }
-
 
 
 /*Flecha para hacer la pagina hacia arriba*/
@@ -130,7 +129,8 @@ tooltip {
 }
 
 .container-fluid nav ul li a {
-  color: #efdd5e !important;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent; 
 }
 
 .flor {
@@ -417,6 +417,7 @@ animation: myAnim 2s infinite normal forwards;
   text-align: center;
   font-size: 24px
 }
+
 
   .botonesuno {
     display: flex;
