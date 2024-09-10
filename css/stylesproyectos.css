@@ -12,7 +12,7 @@
   
   @font-face {
 	font-family: 'titulo';
-	src: url(../fonts/Beauty\ and\ the\ Beast\ Sample.ttf)
+	src: url(../fonts/Fairyfine.otf)
   }
   
   * {
@@ -244,7 +244,7 @@ font-size: 30px
 .parrafosad{
 font-family: 'parrafos';
 text-align: center;
-font-size: 40px
+font-size: 30px
 }
 
 .parrafofooter {

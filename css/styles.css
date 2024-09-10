@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'titulo';
-  src: url(../fonts/Beauty\ and\ the\ Beast\ Sample.ttf)
+  src: url(../fonts/Fairyfine.otf)
 }
 
 * {
@@ -35,7 +35,8 @@ body {
 @media screen and (max-width:991px) {
   body{
   background-image: url('../assets/Fondo1Tablet.jpg');
-  background-size: 100%
+  background-size: 100%;
+  background-repeat: repeat;
 
 }
 }
@@ -222,9 +223,17 @@ tooltip {
 .parrafos {
   font-family: 'parrafos';
   text-align: center;
-  font-size: 32px;
+  font-size: 25px;
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 450px) {
+  .parrafos{
+    justify-content: left;
+    font-size: 20px;
+    
+  } 
+  }
 
 /*.fotouno {
   animation: vibrar 4s ease 0s infinite normal forwards;
@@ -340,12 +349,12 @@ h1 {
 .titulodos {
   font-family: 'navtext';
   color: #D6D0D8;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .tituloadicional {
   font-family: parrafos;
-  font-size: 30px
+  font-size: 50px
 }
 
 .subtitulo {

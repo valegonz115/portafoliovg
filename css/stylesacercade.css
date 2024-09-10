@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'titulo';
-  src: url(../fonts/Beauty\ and\ the\ Beast\ Sample.ttf)
+  src: url(../fonts/Fairyfine.otf)
 }
 
 * {
@@ -35,7 +35,8 @@ body {
 @media screen and (max-width:850px) {
   body{
   background-image: url('../assets/Fondo1Tablet.jpg');
-  background-size: 100%
+  background-size: 100%;
+  background-repeat:repeat
 
 }
 
@@ -43,6 +44,7 @@ body {
   body{
   background-image: url('../assets/Fondo1Movil.jpg');
   background-size: 100%;
+  background-repeat:repeat
 }
 }
 
