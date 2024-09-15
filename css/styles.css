@@ -198,40 +198,48 @@ tooltip {
 
 .flor {
   justify-content: center;
+  padding-left: 40px;
   animation: attention 4s linear infinite;
 
 }
+
+@media screen and (max-width: 450px) {
+  .flor{
+    justify-content: left;
+    font-size: 20px;
+  } 
+  }
 
 @keyframes attention {
   9% {
     transform: none;
   }
   12% {
-    transform: scale(0.45);
+    transform: scale(0.35);
   }
   16% {
     transform: scale(0.35);
   }
   20% {
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
   24% {
-    transform: scale(0.2);
+    transform: scale(0.9);
   }
 }
 
 .parrafos {
   font-family: 'parrafos';
   text-align: center;
-  font-size: 25px;
-  margin-top: 1rem;
+  font-size: 24px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 450px) {
   .parrafos{
     justify-content: left;
     font-size: 20px;
-    
   } 
   }
 
@@ -334,15 +342,15 @@ tooltip {
 
 h1 {
   font-family: 'titulo';
-  color: #fad8e1;
-  font-size: 5rem;
+  color: #FAD8E1;
+  font-size: 6rem;
   word-wrap:normal
 }
 
 .h1plus {
   font-family: 'titulo';
-  color: #b0d333;
-  font-size: 4rem;
+  color: #FFF1B8;
+  font-size: 5rem;
   word-wrap:normal
 }
 
@@ -350,6 +358,7 @@ h1 {
   font-family: 'navtext';
   color: #D6D0D8;
   font-size: 50px;
+
 }
 
 .tituloadicional {
@@ -482,7 +491,7 @@ to {
 
 .sistemasicon {
   filter: drop-shadow(0px 7px 16px #703375);
-  animation: rotar 4s linear infinite;
+  animation: rotar 6s linear infinite;
 }
 
 @keyframes rotar {
